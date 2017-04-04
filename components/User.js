@@ -1,5 +1,5 @@
 import React from "react";
-import {AppRegistry, Image, ScrollView, Text} from "react-native";
+import {AppRegistry, Image, View, Text} from "react-native";
 
 export default class User extends React.Component {
   constructor(props) {
@@ -16,10 +16,10 @@ export default class User extends React.Component {
 
   render() {
     return (
-      <ScrollView style={style.userWrapper}>
+      <View style={style.userWrapper}>
         <Image style={style.image} source={this.state.user.picture}/>
         <Text style={style.text}>{this.state.user.fullName}</Text>
-      </ScrollView>
+      </View>
     );
   }
 }
