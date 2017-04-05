@@ -4,7 +4,7 @@ export default class UserModel {
       return this.emptyModel();
     }
 
-    this.picture = {uri: data.picture.medium || null};
+    this.picture = {uri: data.picture.large || null};
     this.fullName = `${data.name.title} ${data.name.first} ${data.name.last}`.toUpperCase() || null;
   }
 
